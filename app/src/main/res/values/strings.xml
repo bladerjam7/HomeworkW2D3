@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HomeworkW2D3</string>
+    <string name="start_by_adding_items">Start by adding items</string>
+    <string name="add_new">Add New</string>
+    <string name="john_s_gym_manager">John\'s Gym Manager</string>
+    <string name="total_spent_0">Total Spent: $0</string>
+    <string name="equipment_title">EQUIPMENT TITLE</string>
+    <string name="price_default">$0.00</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="go_back">Go back</string>
+    <string name="add_new_item">Add New Item</string>
+    <string name="price">Price</string>
+    <string name="submit">Submit</string>
+    <string name="image_url">Image URL</string>
+</resources>

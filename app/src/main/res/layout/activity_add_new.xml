@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AddNewActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/HomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_16"
+        android:text="@string/add_new_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_item_name"
+        android:layout_width="@dimen/default_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin_16"
+        android:layout_marginTop="@dimen/default_margin_16"
+        android:layout_marginEnd="@dimen/default_margin_16"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/name"
+        android:maxLength="19"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/et_item_price"
+        android:layout_width="@dimen/default_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin_16"
+        android:layout_marginTop="@dimen/default_margin_16"
+        android:layout_marginEnd="@dimen/default_margin_16"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/price"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_item_name" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="@dimen/default_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin_16"
+        android:layout_marginEnd="@dimen/default_margin_16"
+        android:layout_marginBottom="@dimen/default_margin_16"
+        android:text="@string/submit"
+        style="@style/Buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_image_url"
+        android:layout_width="@dimen/default_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin_16"
+        android:layout_marginTop="@dimen/default_margin_16"
+        android:layout_marginEnd="@dimen/default_margin_16"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/image_url"
+        android:inputType="textUri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_item_price" />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="@dimen/default_zero"
+        android:layout_height="@dimen/default_zero"
+        android:layout_margin="@dimen/default_margin_16"
+        android:ems="10"
+        android:gravity="top|start"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/btn_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_image_url" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

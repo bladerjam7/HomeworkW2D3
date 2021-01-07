@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HomeActivity"
+    android:background="@color/backgournd_light_blue">
+
+    <FrameLayout
+        style="@style/HomeTitleBorder"
+        android:layout_width="@dimen/default_zero"
+        android:layout_height="@dimen/default_zero"
+        android:layout_margin="@dimen/default_margin_16"
+        app:layout_constraintBottom_toTopOf="@+id/gv_items"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<ListView
+        android:id="@+id/lv_items"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_new"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"/>-->
+
+    <TextView
+        android:id="@+id/tv_hint_main"
+        style="@style/EquipmentDetailDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_by_adding_items"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/gv_items"
+        app:layout_constraintEnd_toEndOf="@+id/gv_items"
+        app:layout_constraintStart_toStartOf="@+id/gv_items"
+        app:layout_constraintTop_toTopOf="@+id/gv_items" />
+
+    <GridView
+        android:id="@+id/gv_items"
+        android:layout_width="@dimen/default_zero"
+        android:layout_height="@dimen/default_zero"
+        android:layout_margin="@dimen/default_margin_16"
+        android:horizontalSpacing="@dimen/gv_spacing"
+        android:verticalSpacing="@dimen/gv_spacing"
+        android:numColumns="auto_fit"
+        app:layout_constraintBottom_toTopOf="@+id/tv_total_spent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add_new"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        style="@style/Buttons"
+        android:text="@string/add_new"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/HomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:text="@string/john_s_gym_manager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_total_spent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin_16"
+        android:textSize="@dimen/tv_total_spent"
+        android:text="@string/total_spent_0"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_new"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
